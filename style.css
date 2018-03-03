@@ -137,11 +137,52 @@ video {
 }
 
 .working-with {
-    color: #888;
+    color: #222;
     font-family: "Open Sans", sans-serif;
     letter-spacing: -.01em;
-    font-style: italic;
     position: relative;
     padding: 15px;
     padding-top: 0;
+    text-align: center;
+    font-size: .9em;
+}
+
+.presence hr {
+    width: 14vw;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1em 0;
+    padding: 0; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Marcie {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-us {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#shaker-rta {
+    height: 310px;
+    width: auto;
+    position: relative;
+    left: -100px;
+}
+
+.italics {
+    font-style: italic;
 }
