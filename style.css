@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow: hidden;
+    background-color: black;
+    height: 70px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    float: left;
+    z-index: 2;
+}
+
+#form-logo {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    margin-left: 15px;
+}
+
+.hamburger {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 15px;
+}
+
+.line {
+    height: 3px;
+    width: 17px;
+    background-color: white;
+    margin-top: 3px;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.content p {
+    color: white;
+    position: relative;
+    top: 250px;
+    margin: 0 15px 15px 15px;
+    padding-right: 70px;
+    font-weight: bold;
+    /* letter-spacing: 1.1em;  not something to use here but this looks cool */
+    letter-spacing: .05em;
+    font-size: 2.3em;
+    font-family: "PT Sans Narrow", sans-serif;
+    z-index: 10;
+}
