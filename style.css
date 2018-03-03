@@ -79,7 +79,6 @@ video {
 }
 
 .projects-page {
-    height: 1000px;
     width: 100vw;
     background-color: white;
     position: relative;
@@ -89,4 +88,60 @@ video {
     width:100vw;
     height: auto;
     padding: 15px 15px;
+    position: relative;
+}
+
+.projects-page figcaption {
+    color: #888;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: .04em;
+    font-size: .9em;
+    margin-left: 15px;
+    position: relative;
+    top: -13px;    
+}
+
+.projects-page .fig-main {
+    font-size: 1.2em;
+    margin-bottom: -10px;
+}
+
+.love-notes-section {
+    width: 100vw;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.love-notes {
+    height: auto;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+
+}
+
+.love-notes:first-child {
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    font-size: 1em;
+    padding: 8px 8px;
+    position: absolute;
+}
+
+.working-with {
+    color: #888;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -.01em;
+    font-style: italic;
+    position: relative;
+    padding: 15px;
+    padding-top: 0;
 }
