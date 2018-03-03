@@ -42,12 +42,17 @@ header {
 video {
     min-width: 100%;
     min-height: 100%;
+    max-height: calc(100vh - 70px);
     position: absolute;
     right: 0;
     top: 70px;
 }
 
-.content p {
+.main-video {
+    height: 100vh;
+}
+
+.main-video p:first-of-type {
     color: white;
     position: relative;
     top: 250px;
@@ -59,4 +64,29 @@ video {
     font-size: 2.3em;
     font-family: "PT Sans Narrow", sans-serif;
     z-index: 10;
+}
+
+.main-video p {
+    color: white;
+    position: relative;
+    top: 250px;
+    margin: 0 15px 15px 15px;
+    padding-right: 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+    letter-spacing: .04em;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.projects-page {
+    height: 1000px;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+.projects-page img {
+    width:100vw;
+    height: auto;
+    padding: 15px 15px;
 }
