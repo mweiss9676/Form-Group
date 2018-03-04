@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.button {
+    height: auto;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+}
+
+.button-text {
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    padding: 8px 8px;
+    position: relative;
+}
+
 header {
     overflow: hidden;
     background-color: black;
@@ -115,25 +134,12 @@ video {
     position: relative;
 }
 
-.love-notes {
-    height: auto;
-    width: 100px;
-    background-color: black;
-    position: relative;
+.love-notes-button {
     top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: content-box;
-
 }
 
-.love-notes:first-child {
-    color: white;
-    font-family: "PT Sans Narrow", sans-serif;
-    text-align: center;
-    font-size: 1em;
-    padding: 8px 8px;
-    position: absolute;
+.love-notes-button:first-child {
+    font-size: .9rem;
 }
 
 .working-with {
@@ -185,4 +191,115 @@ video {
 
 .italics {
     font-style: italic;
+}
+
+.contact-us-button {
+    top: 20px;
+    width: 110px;
+}
+
+.contact-us-button > h5 {
+    font-size: .9em;
+}
+
+.contact-us p {
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 110px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-shadow: 0 2px 4px rgba(40, 40, 40, .6);
+}
+
+.contact-us hr {
+    width: 14vw;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #CCC;
+    margin: 1em 0;
+    padding: 0; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+}
+
+.email {
+    background-color: rgb(0, 171, 238);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#email-icon {
+    position: relative;
+    left: 50%;
+    top:10px;
+    transform: translateX(-50%);
+}
+
+.be-friends {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    position: relative;
+}
+
+.be-friends-button {
+    top: 50px;
+    width: 140px;
+}
+
+.be-friends-button h5 {
+    padding: 8px 10px;
+    font-size: .9rem;
+}
+
+#stegasaurus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    z-index: 10;
+}
+
+.be-friends .spacer {
+    width: 100vw;
+    height: 110px;
+    display: block;
+}
+
+#like-us {
+    position: relative;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+}
+
+.icon-links {
+    color: white;
+    text-align: center;
+}
+
+.icon-links * {
+    background-color: rgb(0, 171, 238);
+    margin: 20px 3px 0 2px;
+}
+
+#facebook, #twitter, #instagram, #linkedin, #vimeo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
 }
