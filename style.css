@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********* Variables *********/
+body {
+    --icon-blue: rgb(0, 171, 238);
+}
+
+
+/********* End Variables *********/
+
+/********* Repeated Elements **********/
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    height: auto;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+}
+
+.button-text {
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    padding: 8px 8px;
+    position: relative;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1em 0;
+    padding: 0; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/************ End Repeated Elements ************/
+
+header {
+    overflow: hidden;
+    background-color: black;
+    height: 70px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    float: left;
+    z-index: 2;
+}
+
+#form-logo {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    margin-left: 15px;
+}
+
+.hamburger {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 15px;
+}
+
+.line {
+    height: 3px;
+    width: 17px;
+    background-color: white;
+    margin-top: 3px;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    max-height: calc(100vh - 70px);
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.main-video {
+    height: 100vh;
+}
+
+.main-video p:first-of-type {
+    color: white;
+    position: relative;
+    top: 250px;
+    margin: 0 15px 15px 15px;
+    padding-right: 70px;
+    font-weight: bold;
+    /* letter-spacing: 1.1em;  not something to use here but this looks cool */
+    letter-spacing: .05em;
+    font-size: 2.3em;
+    font-family: "PT Sans Narrow", sans-serif;
+    z-index: 10;
+}
+
+.main-video p {
+    color: white;
+    position: relative;
+    top: 250px;
+    margin: 0 15px 15px 15px;
+    padding-right: 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+    letter-spacing: .04em;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.projects-page {
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+.projects-page img {
+    width:100vw;
+    height: auto;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.projects-page figcaption {
+    color: #888;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: .04em;
+    font-size: .9em;
+    margin-left: 15px;
+    position: relative;
+    top: -13px;    
+}
+
+.projects-page .fig-main {
+    font-size: 1.2em;
+    margin-bottom: -10px;
+}
+
+.love-notes-section {
+    width: 100vw;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.love-notes-button {
+    top: 80px;
+}
+
+.love-notes-button:first-child {
+    font-size: .9rem;
+}
+
+.working-with {
+    color: #222;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -.01em;
+    position: relative;
+    padding: 15px;
+    padding-top: 0;
+    text-align: center;
+    font-size: .9em;
+}
+
+.presence hr {
+    width: 14vw;
+    position: relative;
+}
+
+.Marcie {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-us {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#shaker-rta {
+    height: 310px;
+    width: auto;
+    position: relative;
+    left: -100px;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.contact-us-button {
+    top: 20px;
+    width: 110px;
+}
+
+.contact-us-button > h5 {
+    font-size: .9em;
+}
+
+.contact-us p {
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 110px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-shadow: 0 2px 4px rgba(40, 40, 40, .6);
+}
+
+.contact-us hr {
+    width: 14vw;
+    position: absolute;
+    top: 70px;
+}
+
+.email {
+    background-color: var(--icon-blue);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#email-icon {
+    position: relative;
+    left: 50%;
+    top:10px;
+    transform: translateX(-50%);
+}
+
+.be-friends {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    position: relative;
+}
+
+.be-friends-button {
+    top: 50px;
+    width: 140px;
+}
+
+.be-friends-button h5 {
+    padding: 8px 10px;
+    font-size: .9rem;
+}
+
+#stegasaurus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    z-index: 10;
+}
+
+.be-friends .spacer {
+    width: 100vw;
+    height: 110px;
+    display: block;
+}
+
+#like-us {
+    position: relative;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+}
+
+.icon-links {
+    color: white;
+    text-align: center;
+}
+
+.icon-links * {
+    background-color: var(--icon-blue);
+    margin: 20px 3px 0 2px;
+}
+
+#facebook, #twitter, #instagram, #linkedin, #vimeo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+}
+
+.theater-section {
+    height: auto;
+    background-color: white;
+    width: 100vw;
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+.sliver {
+    height: 55px;
+    width: 92%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sliver img {
+    position: relative;
+    top: -145px;
+    width: 100%;
+}
+
+.theater-section p {
+    text-align: left;
+    margin: 5px 15px;
+    color: #555;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: .04em;
+    font-size: 1.2em;
+    line-height: 2rem;
+}
+
+#fb-span {
+    font-size: .9rem;
+}
+
+.theater-section hr {
+    width: 100vw;    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.links {
+    position: relative;
+    margin-top: 20px;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.links a, li {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: .9rem;
+    color: #888;
+}
+
+.links li {
+    margin-left: 15px;
+    line-height: 1.3rem;
+}
+
+.links-title {
+    padding-bottom: 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #555;
+}
+
+.results {
+    float: left;
+    margin-right: 25vw;
+    margin-top: 20px;
+}
+
+.about {
+    float: left;
+    margin-top: 20px;
+}
+
+.culture {
+    clear: left;
+    float: left;
+    margin-right: 25vw;
+    margin-top: 15px;
+}
+
+.jobs-culture-contact {
+    float: left;
+    margin-top: 15px;
+}
+
+.membership-logos img {
+    clear: both;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.links hr {
+    width: 100vw;
+    margin-top: 100px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 40px 0;
+    line-height: 1.5rem;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+    font-size: .8rem;
+}
+
+.copyright a {
+    color: #999;
+}
+
+
+
+
