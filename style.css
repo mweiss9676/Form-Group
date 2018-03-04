@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+/********* Variables *********/
+body {
+    --icon-blue: rgb(0, 171, 238);
+}
+
+
+/********* End Variables *********/
+
+/********* Repeated Elements **********/
+.bold {
+    font-weight: bold;
+}
+
 .button {
     height: auto;
     width: 100px;
@@ -22,6 +35,20 @@
     padding: 8px 8px;
     position: relative;
 }
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1em 0;
+    padding: 0; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/************ End Repeated Elements ************/
 
 header {
     overflow: hidden;
@@ -155,15 +182,7 @@ video {
 
 .presence hr {
     width: 14vw;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 1em 0;
-    padding: 0; 
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .Marcie {
@@ -218,20 +237,12 @@ video {
 
 .contact-us hr {
     width: 14vw;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #CCC;
-    margin: 1em 0;
-    padding: 0; 
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     top: 70px;
 }
 
 .email {
-    background-color: rgb(0, 171, 238);
+    background-color: var(--icon-blue);
     color: white;
     width: 35px;
     height: 35px;
@@ -293,7 +304,7 @@ video {
 }
 
 .icon-links * {
-    background-color: rgb(0, 171, 238);
+    background-color: var(--icon-blue);
     margin: 20px 3px 0 2px;
 }
 
@@ -303,3 +314,128 @@ video {
     height: 30px;
     padding: 6px;
 }
+
+.theater-section {
+    height: auto;
+    background-color: white;
+    width: 100vw;
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+.sliver {
+    height: 55px;
+    width: 92%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sliver img {
+    position: relative;
+    top: -145px;
+    width: 100%;
+}
+
+.theater-section p {
+    text-align: left;
+    margin: 5px 15px;
+    color: #555;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: .04em;
+    font-size: 1.2em;
+    line-height: 2rem;
+}
+
+#fb-span {
+    font-size: .9rem;
+}
+
+.theater-section hr {
+    width: 100vw;    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.links {
+    position: relative;
+    margin-top: 20px;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.links a, li {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: .9rem;
+    color: #888;
+}
+
+.links li {
+    margin-left: 15px;
+    line-height: 1.3rem;
+}
+
+.links-title {
+    padding-bottom: 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #555;
+}
+
+.results {
+    float: left;
+    margin-right: 25vw;
+    margin-top: 20px;
+}
+
+.about {
+    float: left;
+    margin-top: 20px;
+}
+
+.culture {
+    clear: left;
+    float: left;
+    margin-right: 25vw;
+    margin-top: 15px;
+}
+
+.jobs-culture-contact {
+    float: left;
+    margin-top: 15px;
+}
+
+.membership-logos img {
+    clear: both;
+    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.links hr {
+    width: 100vw;
+    margin-top: 100px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 40px 0;
+    line-height: 1.5rem;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #999;
+    font-size: .8rem;
+}
+
+.copyright a {
+    color: #999;
+}
+
+
+
+
