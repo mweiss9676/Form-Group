@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Sans+Narrow|Open+Sans+Condensed:300" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="script.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
 <body>
+    <nav id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+        <ul class="nav-list">
+            <a href="#"><li>WORK</li></a>
+            <a href="#"><li>CMS</li></a>
+            <a href="#"><li>RESULTS</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>CULTURE</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#"><li>JOBS</li></a>
+            <a href="#"><li>CONTACT</li></a>
+        </ul>
+    </nav>
     <div class="container">
         <header>
             <img id="form-logo" src="images/form-logo.png" alt="The Form Group logo-black text on white background" />
-            <div class="hamburger">
+            <div class="hamburger" onclick="openNav()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -149,9 +163,9 @@
                     <img id="afp" src="images/association-of-fundraising-professionals.png" alt="Association of Fundraising Professionals logo">
                     <img id="ama" src="images/american-marketing-association.png" alt="American Marketing Association logo">
                 </div> <!--end membership-logos-->
-                <hr>
             </div> <!--end links-->    
             <div class="copyright">
+                <hr>
                 <p>@Copyright 2018 FORM. All rights reserved
                     <br><a href="#">20600 Chagrin Boulevard Suite 200 Cleveland, OH 44122</a>
                     <br><a href="#">216 921 9460</a>
