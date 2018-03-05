@@ -50,6 +50,54 @@ hr {
 
 /************ End Repeated Elements ************/
 
+#side-nav {
+    width: 0;
+    height: 100vh;
+    z-index: 40;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.close-button {
+    font-size: 3rem;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #888;
+    border-radius: 50%;
+    color: #888;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.close-button:hover {
+    cursor: pointer;
+}
+
+.side-nav a {
+    text-decoration: none;
+}
+
+.nav-list {
+    margin-top: 40px;
+}
+
+.nav-list li {
+    line-height: 3.5rem;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #777;
+    text-align: center;
+    list-style: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 header {
     overflow: hidden;
     background-color: black;
@@ -58,7 +106,7 @@ header {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     float: left;
-    z-index: 2;
+    z-index: 20;
 }
 
 #form-logo {
@@ -76,6 +124,10 @@ header {
     top: 50%;
     transform: translate(0, -50%);
     margin-right: 15px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
 }
 
 .line {
@@ -365,6 +417,7 @@ video {
     margin-top: 20px;
     height: auto;
     padding-bottom: 60px;
+    overflow: auto;
 }
 
 .links a, li {
@@ -418,22 +471,22 @@ video {
     margin-top: 20px;
 }
 
-.links hr {
+.copyright hr {
     width: 100vw;
-    margin-top: 100px;
+    padding-bottom: 45px;
 }
 
 .copyright {
     text-align: center;
-    padding: 40px 0;
     line-height: 1.5rem;
     font-family: "PT Sans Narrow", sans-serif;
-    color: #999;
+    color: #888;
     font-size: .8rem;
+    padding-bottom: 30px;
 }
 
 .copyright a {
-    color: #999;
+    color: #888;
 }
 
 
