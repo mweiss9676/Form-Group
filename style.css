@@ -33,7 +33,7 @@ body {
     text-align: center;
     font-weight: lighter;
     padding: 8px 8px;
-    position: relative;
+    /* position: relative; */
 }
 
 hr {
@@ -251,17 +251,23 @@ video {
 
 .contact-us {
     width: 100vw;
-    height: auto;
     background-color: white;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+    height: auto;
+    float: center;
+}
+
+.contact-us img {
+    width: 100%;
 }
 
 #shaker-rta {
-    height: 310px;
-    width: auto;
-    position: relative;
-    left: -100px;
+    height: 300px; 
+    width: 100vw;
+    /* position: relative; */
+    object-fit: cover;
+    position: block;
 }
 
 .italics {
@@ -304,7 +310,7 @@ video {
     height: 35px;
     border-radius: 50%;
     position: absolute;
-    top: 180px;
+    top: 190px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -318,14 +324,19 @@ video {
 
 .be-friends {
     width: 100%;
-    height: 250px;
+    height: 110px;
     background-color: white;
+    display: block;
+    float: center;
+    clear: both;
+    margin-top: 100px;
     position: relative;
 }
 
 .be-friends-button {
     top: 50px;
     width: 140px;
+    margin-top: -100px;
 }
 
 .be-friends-button h5 {
@@ -337,14 +348,8 @@ video {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -70px;
+    top: -165px;
     z-index: 10;
-}
-
-.be-friends .spacer {
-    width: 100vw;
-    height: 110px;
-    display: block;
 }
 
 #like-us {
@@ -352,6 +357,7 @@ video {
     text-align: center;
     font-family: "PT Sans Narrow", sans-serif;
     color: #999;
+    margin-top: 5px;
 }
 
 .icon-links {
@@ -390,8 +396,10 @@ video {
 }
 
 .sliver img {
-    position: relative;
-    top: -145px;
+    /* position: relative; */
+    object-fit:  cover;
+    height: 100%;
+    /* top: -145px; */
     width: 100%;
 }
 
@@ -557,7 +565,6 @@ video {
     }
 
     .contact-us {
-        height: 200px;
         width: 100vw;
     }
 
@@ -566,6 +573,81 @@ video {
         width: 100vw;
         position: relative;
     }
+
+    .button {
+        height: auto;
+        width: 120px;
+    }
+    
+    .button-text {
+        font-size: 1.2rem;
+    }
+    
+    .working-with {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+     
+
+    #stegasaurus {
+        position: absolute;
+        top: -30px;
+        right: 100px;
+        z-index: 10;
+        margin-left: -270px;
+    }
+    
+    .be-friends-button {
+        top: 85px;
+        width: 155px;
+        margin-top: 0;
+        margin-left: -270px;
+    }
+
+    .be-friends {
+        width: 100%;
+        height: 110px;
+        background-color: white;
+        margin: auto auto;
+    }
+
+    .sliver {
+        width: 464px;
+        height: 65px;
+        margin-left: 120px;
+    }
+    
+    .sliver img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    #be-friends-button {
+        padding-bottom: 20px;
+    }
+
+    .social-media-links {
+        background-color: red;
+        float: left;
+        position: relative;
+        top: 130px;
+        z-index: 6;
+    }
+
+    .theater-section {
+        margin: auto auto;
+    }
+
+    .like-us {
+        word-wrap: break-word;
+    }
+
+    .theater-section p {
+        width: 464px;
+        height: 75px;
+    }
+
 }
 
 
