@@ -205,6 +205,10 @@ video {
     margin-bottom: -10px;
 }
 
+.hidden-text {
+    display: none;
+}
+
 .love-notes-section {
     width: 100vw;
     height: 150px;
@@ -489,6 +493,83 @@ video {
     color: #888;
 }
 
+.darken-projects {
+    color: rgba(40, 40, 40, .8);
+}
+/***************** Media Queries **********************/
+@media only screen and (min-width: 570px) {
+    .projects-page img {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: -300px;
+        left: 0px;
+        float: left;
+        width: 240%;
+    }
 
+    .projects-image-div:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), black, rgba(0, 0, 0, 0));
+    }
+
+    .projects-image-div {
+        height: 150px;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .projects-page figcaption {
+        display: none;
+    }
+
+    .projects-page {
+        overflow: auto;
+    }
+
+    .hidden-text {
+        color: white;
+        font-size: 40px;
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 4;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .ht-small {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        top: 27%;
+        font-weight: 600;
+        color: #999;
+        text-transform: none;
+    }
+
+    .contact-us {
+        height: 200px;
+        width: 100vw;
+    }
+
+    #shaker-rta {
+        object-fit: cover;
+        width: 100vw;
+        position: relative;
+    }
+}
+
+
+
+/***************** End Media Queries **********************/
 
 
