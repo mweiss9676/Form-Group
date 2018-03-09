@@ -252,7 +252,7 @@ video {
 .contact-us {
     width: 100vw;
     background-color: white;
-    position: relative;
+    position: relative;    
     /* overflow: hidden; */
     height: auto;
     float: center;
@@ -378,21 +378,21 @@ video {
 }
 
 .theater-section {
-    height: auto;
+    height: 250px;
     background-color: white;
     width: 100vw;
     position: relative;
     margin-top: 15px;
-    
 }
 
 .sliver {
     height: 55px;
     width: 92%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
 }
 
 .sliver img {
@@ -403,7 +403,13 @@ video {
     width: 100%;
 }
 
+p.sliver-text {
+    margin: 0;
+    padding: 0;
+}
+
 .theater-section p {
+    display: block;
     text-align: left;
     margin: 5px 15px;
     color: #555;
@@ -425,8 +431,8 @@ video {
 }
 
 .links {
-    position: relative;
-    margin-top: 20px;
+    /* position: relative; */
+    /* margin-top: 200px; */
     height: auto;
     padding-bottom: 60px;
     overflow: auto;
@@ -449,6 +455,10 @@ video {
     padding-bottom: 15px;
     font-family: "Open Sans Condensed", sans-serif;
     color: #555;
+}
+
+.work {
+    padding-top: 20px;
 }
 
 .results {
@@ -568,9 +578,27 @@ video {
         width: 100vw;
     }
 
+    .contact-us > *:not(img){
+        margin-top: 20px;
+    }
+
+    .contact-us-button {
+        top: 40px;
+    }
+
+    .contact-us hr {
+        top: 100px;
+        width: 50px;
+    }
+
+    .contact-us p br:first-child {
+        display: none;
+    }
+
     #shaker-rta {
         object-fit: cover;
         width: 100vw;
+        height: 300px;
         position: relative;
     }
 
@@ -600,8 +628,10 @@ video {
     .be-friends-button {
         top: 85px;
         width: 155px;
+        z-index: 4;
         margin-top: 0;
-        margin-left: -270px;
+        margin-left: -250px;
+        padding: 0px 0px;
     }
 
     .be-friends {
@@ -609,34 +639,48 @@ video {
         height: 110px;
         background-color: white;
         margin: auto auto;
+        position: absolute;
     }
 
     .sliver {
         width: 464px;
         height: 65px;
         margin-left: 120px;
+        padding-right: 80px;
     }
     
     .sliver img {
         object-fit: cover;
         height: 100%;
         width: 100%;
+        margin-top: 80px;
     }
 
-    #be-friends-button {
-        padding-bottom: 20px;
+    p.sliver-text {
+        margin: 0;
+        padding-right: 80px;
     }
 
     .social-media-links {
-        background-color: red;
         float: left;
+        word-wrap: break-word;
         position: relative;
-        top: 130px;
+        width: 180px;
+        top: 150px;
+        left: 35px;
         z-index: 6;
+    }
+
+    #facebook, #twitter, #instagram, #linkedin, #vimeo {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        padding: 3px;
     }
 
     .theater-section {
         margin: auto auto;
+        margin-bottom: 50px;
     }
 
     .like-us {
